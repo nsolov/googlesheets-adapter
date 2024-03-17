@@ -44,4 +44,24 @@ Copy somewhere the service account’s email - you will use it later.
 
 Go to Keys tab and click “Add Key” and then “Create New Key”
 Select “JSON” and download created file. 
- 
+
+
+## Demo
+
+In this example, the business service utilizes an incoming Google Sheets adapter to detect new rows in the document on the specified sheet. It processes the received data from each row and invokes the `GoogleSheets.BusinessOperation` business operation to write data to a new sheet in the same document.
+
+One column of the document (the sheet with the original data) must contain a unique identifier for each row, ensuring that each row is processed only once. Additionally, the row must contain one or more cells with numerical data.
+
+When the adapter detects a new row, it passes this row to the business service. The business service calculates the sum of all the numbers in the row (excluding the ID column) and generates a new row containing the sum of values and the current date. These data will be passed to the business operation for writing to the Google Sheets document.
+
+To run the demo:
+
+1. Create and share your document with the service account
+   
+   1.1. Create GoogleSheet document
+   
+   1.2. Save ID of the document somewhere - you will use it later
+   
+   1.3. Share using service account’s email and give role “Editor”
+
+3. Run demo
