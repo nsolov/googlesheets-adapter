@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Document name="googlesheets-adapter.ZPM"><Module>
+  <Name>googlesheets-adapter</Name>
+  <Version>0.0.1</Version>
+  <ExternalName>Google Sheets Adapter</ExternalName>
+  <Description>InboundAdapter and OutboundAdapter for Google Sheets</Description>
+  <Author>
+    <Organization>Nikolay Solovyev</Organization>
+    <CopyrightDate>2024</CopyrightDate>
+  </Author>
+  <Packaging>module</Packaging>
+  <SourcesRoot>src</SourcesRoot>
+  <Resource Name="Google.PKG"/>
+  <Resource Name="GoogleSheets.OutboundAdapter.CLS"/>
+  <Resource Name="GoogleSheets.InboundAdapter.CLS"/>
+  <Resource Name="GoogleSheets.BusinessOperation.CLS"/>
+  <Resource Name="GoogleSheets.Request.CLS"/>
+</Module>
+</Document>
+</Export>
