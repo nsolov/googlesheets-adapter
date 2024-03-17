@@ -64,4 +64,55 @@ To run the demo:
    
    1.3. Share using service account’s email and give role “Editor”
 
-3. Run demo
+2. Run demo
+
+  2.1. Clone repo https://github.com/nsolov/googlesheets-adapter
+  
+  2.2. Put GoogleSheets API KEY KeyFile into the project folder
+
+  2.3. Run IRIS with 'compose up'
+
+  2.4. Open Production Configuration (http://localhost:52783/csp/user/EnsPortal.ProductionConfig.zen?$NAMESPACE=USER&$NAMESPACE=USER&)
+
+  2.5. For Business Service specify all fields in Google section
+
+<img src="https://nsolov.com/img/adapter/image3.png" width="30%" align="right">
+
+* KeyFile - full path to the keyfile
+  
+* SpreadsheetId - ID you copied earlier
+  
+* SheetTitle - title of the first sheet (“Sheet1”)
+  
+* IDColumn = 1
+  
+* RequiredColumns = 1,2,3
+
+<br clear="all"> 
+
+  2.6. For Business Operation specify
+
+* KeyFile - full path to the keyfile
+
+
+2.7. Start Production
+
+2.8. Add one or more rows in ‘Sheet1’ of your document
+
+<img src="https://nsolov.com/img/adapter/image4.png" width="60%" >
+
+2.9. In a few seconds you’ll see ‘newSheet’ - new sheet with results
+
+<img src="https://nsolov.com/img/adapter/image1.png" width="60%" >  
+
+
+  
+
+
+
+
+
+
+
+
+
